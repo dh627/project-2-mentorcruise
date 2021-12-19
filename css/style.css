@@ -10,13 +10,172 @@ body {
 
 #navbar {
   background-color: #212b31;
+  padding: 20px 0px;
 }
 
 #navbar .nav-links {
   list-style: none;
 }
 
+.nav-links {
+  display: none;
+}
+
+.mobile-nav-links {
+  display: none;
+}
+
+.search {
+  display: none;
+}
+
+.burger-menu {
+  float: right;
+  padding: 12px;
+  border: 1px solid #949494;
+  border-radius: 4px;
+  margin-right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #949494;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+#main-banner {
+  height: 600px;
+  background-image: url(../images/food.jpeg);
+  background-size: cover;
+  /* background-position: center; */
+}
+
+#blog h1 {
+  text-align: center;
+  padding: 60px 0px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.card-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card .card-image-1 {
+  background-image: url(../images/pasta.jpeg);
+}
+
+.card .card-image-2 {
+  background-image: url(../images/curry.jpeg);
+}
+
+.card .card-image-3 {
+  background-image: url(../images/chocolate.jpeg);
+}
+
+.card {
+  /* width: 340px; */
+  /* height: 600px; */
+  /* background-color: red; */
+  border-radius: 5px;
+  border: 3px solid #eceeee;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  height: 340px;
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+
+.card .text {
+  padding: 15px 12px;
+}
+
+.card .text h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.card .read-more {
+  padding: 10px;
+  width: 35%;
+  text-align: center;
+  /* color: white; */
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 20px 0px;
+}
+
+.card .read-more:hover {
+  cursor: pointer;
+}
+
+.read-more-button-1 {
+  background-color: #0275d8;
+  color: white;
+}
+
+.read-more-button-2 {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.read-more-button-3 {
+  background-color: #ffc107;
+  color: black;
+}
+
+footer .footer-links {
+  padding: 30px 0px;
+  text-align: center;
+}
+
+footer .footer-links a {
+  text-decoration: none;
+  color: #73787c;
+  padding-right: 5px;
+}
+
+footer hr {
+  border: none;
+  height: 2px;
+  width: 75%;
+  margin: auto;
+  color: #eceeee;
+  background-color: #eceeee;
+}
+
+footer p {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #73787c;
+}
+
 @media (min-width: 768px) {
+  .clearfix {
+    display: none;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+  }
+
+  .card {
+    margin-bottom: 0px;
+    width: 30%;
+  }
+
+  .card .read-more {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -61,127 +220,33 @@ body {
     color: green;
   }
 
+  .mobile-nav-links {
+    display: none;
+  }
+
   .search-button:hover {
     cursor: pointer;
   }
 
-  #main-banner {
-    height: 600px;
-    background-image: url(../images/food.jpeg);
-    background-size: cover;
-    /* background-position: center; */
-  }
-
-  #blog h1 {
-    text-align: center;
-    padding: 60px 0px;
-    font-size: 35px;
-    font-weight: 500;
-  }
-
-  .card-container {
-    display: flex;
-    justify-content: space-around;
-    width: 95%;
-    margin: auto;
-  }
-
-  .card {
-    width: 340px;
-    /* height: 600px; */
-    /* background-color: red; */
-    border-radius: 5px;
-    border: 3px solid #eceeee;
-  }
-
-  .card .card-image-1 {
-    background-image: url(../images/pasta.jpeg);
-  }
-
-  .card .card-image-2 {
-    background-image: url(../images/curry.jpeg);
-  }
-
-  .card .card-image-3 {
-    background-image: url(../images/chocolate.jpeg);
-  }
-
-  .card-image {
-    height: 340px;
-    background-position: center;
-    background-size: cover;
-    margin: 5px;
-  }
-
-  .card .text {
-    padding: 15px 12px;
-  }
-
-  .card .text h2 {
-    font-weight: 500;
-    font-size: 20px;
-  }
-
-  .card .text p {
-    color: #73787c;
-    padding-top: 10px;
+  .burger-menu {
+    display: none;
   }
 
   .card .read-more {
-    padding: 10px;
     width: 35%;
-    text-align: center;
-    /* color: white; */
-    border-radius: 5px;
-    font-size: 15px;
-    margin: 20px 0px;
-  }
-
-  .card .read-more:hover {
-    cursor: pointer;
-  }
-
-  .read-more-button-1 {
-    background-color: #0275d8;
-    color: white;
-  }
-
-  .read-more-button-2 {
-    background-color: #5cb85c;
-    color: white;
-  }
-
-  .read-more-button-3 {
-    background-color: #ffc107;
-    color: black;
   }
 
   footer .footer-links {
-    padding-top: 60px;
+    padding-top: 80px;
     width: 30%;
     margin: auto;
   }
 
   footer .footer-links a {
-    text-decoration: none;
-    color: #73787c;
     padding-right: 15px;
   }
 
   footer hr {
-    border: none;
-    height: 2px;
     width: 92%;
-    margin: auto;
-    color: #eceeee;
-    background-color: #eceeee;
-    margin-top: 60px;
-  }
-
-  footer p {
-    margin-top: 20px;
-    margin-bottom: 60px;
-    text-align: center;
-    color: #73787c;
   }
 }
