@@ -63,15 +63,19 @@ body {
   margin: 0 auto;
 }
 
-.card .card-image-1 {
+.card-image-1 {
   background-image: url(../images/pasta.jpeg);
 }
 
-.card .card-image-2 {
+.card-image-2 {
   background-image: url(../images/curry.jpeg);
 }
 
-.card .card-image-3 {
+.card-image-2-alt {
+  background-image: url(../images/empty.jpeg);
+}
+
+.card-image-3 {
   background-image: url(../images/chocolate.jpeg);
 }
 
