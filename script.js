@@ -41,3 +41,15 @@ document.querySelector(".read-more-button-2").addEventListener("click", () => {
       .classList.toggle("card-image-2");
   }
 });
+
+// challenge 3
+document.querySelector(".read-more-button-3").addEventListener("click", () => {
+  let text = document.querySelector(".text-3").textContent;
+  if (!text.includes(". This is additional text")) {
+    document.querySelector(".text-3").textContent =
+      "Some quick example text to build on the card title and make up the bulk of the cards content. This is additional text";
+  } else {
+    document.querySelector(".text-3").textContent =
+      "Some quick example text to build on the card title and make up the bulk of the cards content";
+  }
+});
